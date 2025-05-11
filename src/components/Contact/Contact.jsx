@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsOps";
 
-const Contact = ({ name, number, id }) => {
+const Contact = ({ name, number, id, idx }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
@@ -15,6 +15,7 @@ const Contact = ({ name, number, id }) => {
     <div className={s.contactWrap}>
       <div>
         <p className={s.userText}>
+          {idx + 1}.
           <FaUser />
           {name}
         </p>
