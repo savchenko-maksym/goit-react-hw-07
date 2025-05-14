@@ -1,8 +1,12 @@
 import { Field, Form, Formik } from "formik";
 import s from "./LoginForm.module.css";
 import { Link } from "react-router";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/auth/operations";
 
 const LoginForm = () => {
+  const dispatch = useDispatch();
+
   const initialValues = {
     email: "",
     password: "",
@@ -10,6 +14,7 @@ const LoginForm = () => {
 
   const handleSubmit = (values, options) => {
     console.log(values);
+    dispatch(login(values));
   };
 
   return (
