@@ -1,0 +1,9 @@
+.form {
+  width: 220px;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
