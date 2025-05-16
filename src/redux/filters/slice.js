@@ -16,5 +16,3 @@ const filtersSlise = createSlice({
 
 export const { changeFilter } = filtersSlise.actions;
 export default filtersSlise.reducer;
-
-export const selectNameFilter = (state) => state.filters.name.toLowerCase();
