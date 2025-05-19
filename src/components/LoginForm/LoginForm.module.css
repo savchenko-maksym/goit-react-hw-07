@@ -6,4 +6,25 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 6px;
+}
+
+.linkToRegister {
+  color: blue;
+  font-size: 12px;
+  font-style: italic;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  padding: 4px 14px;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+.input {
+  padding: 4px;
 }

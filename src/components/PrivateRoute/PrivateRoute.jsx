@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
 
   useEffect(() => {
     if (!isLoggedin) {
-      toast("Please log in to use the application.", { id: "toast-one" });
+      toast("Please login to use the application.", { id: "toast-one" });
     }
   }, [isLoggedin]);
 

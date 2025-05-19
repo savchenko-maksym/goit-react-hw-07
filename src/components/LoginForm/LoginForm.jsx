@@ -26,22 +26,26 @@ const LoginForm = () => {
             <Formik initialValues={initialValues} onSubmit={handleSubmit}>
               <Form>
                 <fieldset className={s.fieldset}>
-                  <label className={s.label}>Email</label>
-                  <Field
-                    name="email"
-                    type="email"
-                    className={s.input}
-                    placeholder="Email"
-                  />
-                  <label className={s.label}>Password</label>
-                  <Field
-                    name="password"
-                    type="password"
-                    className={s.input}
-                    placeholder="Password"
-                  />
+                  <label className={s.label}>
+                    Email
+                    <Field
+                      name="email"
+                      type="email"
+                      className={s.input}
+                      placeholder="Email"
+                    />
+                  </label>
+                  <label className={s.label}>
+                    Password
+                    <Field
+                      name="password"
+                      type="password"
+                      className={s.input}
+                      placeholder="Password"
+                    />
+                  </label>
                   <div>
-                    <Link to="/register" className={s.link}>
+                    <Link className={s.linkToRegister} to="/register">
                       Register if you dont have account
                     </Link>
                   </div>
